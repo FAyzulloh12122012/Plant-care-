@@ -1,0 +1,98 @@
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-white);
+    padding: 20px;
+
+    .header_wraper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__logo{
+        margin-right: auto;
+    }
+    &__navbar{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 14px;
+    }
+    &__form{
+        position: relative;
+
+        .form_search{
+            border: 1px solid black;
+            width: 396px;
+            height: 53px;
+            border-radius: 30px;
+            padding: 20px;
+            outline: none;
+        }
+        .form_btn{
+            background: var(--bg-black);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 9px;
+            right: 8px;
+        }
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        .header_btn{
+            background: var(--bg-black);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .header__hr{
+        color: var(--color-grey);
+        width: 1px;
+        height: 35px;
+    }
+    &__john{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 14px;
+
+        .john_btn{
+            background: var(--bg-black);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+        }
+        .john_text{
+            font-size: larger;
+        }
+    }
+    &_product-btn{
+        display: none;
+        background: var(--bg-black);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:714px) and (min-width:340px){
+    .header{
+        padding: 14px 0;
+
+        .header__navbar{
+            display: none;
+        }
+        .header_product-btn{
+            display: block;
+        }
+    }
+}

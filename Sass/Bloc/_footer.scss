@@ -1,0 +1,15 @@
+footer{
+    background: var(--bg-black);
+    padding: 64px 0;
+
+    .footer__wraper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer_small{
+            color: var(--color-white);
+            font-size: large;
+        }
+    }
+}

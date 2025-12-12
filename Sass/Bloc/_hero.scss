@@ -1,0 +1,43 @@
+.hero{
+    padding: 10px 0;
+    
+    .hero__wraper{
+        background: var(--bg-grey);
+        width: 999px;
+        height: 395px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        padding-top: 66px;
+
+        .hero_top-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+
+            .hero_btn{
+                background: var(--bg-black);
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .hero_list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+            gap: 30px;
+
+            .hero_item{
+                background: var(--bg-white);
+                width: 500px;
+                height: 230px;
+            }
+        }
+    }
+}
